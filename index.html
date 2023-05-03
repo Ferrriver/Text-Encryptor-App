@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/65a9ded823.js" crossorigin="anonymous"></script>
+    <title>Encriptador de textos</title>
+</head>
+<body>
+    <header>
+        <img src="images/encriptado.png">
+        <h1>Encriptador</h1>
+    </header>
+    <main>
+        <section class="sectionText"> 
+                <textarea id="textArea" rows="7" name="input-text" placeholder="Ingrese texto aquí" required></textarea>
+                <div class="div-info">
+                    <img src="images/infoIcon.svg">
+                    <p class="info">Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="div-buttons">
+                    <button  class="encrypt-btn" type="button" id="encrypt-btn" onclick="encriptar()">Encriptar</button>
+                    <button class="decrypt-btn" type="button" id="decrypt-btn" onclick="desencriptar()">Desencriptar</button>
+                </div>
+        </section>
+        <section class="sectionResult">
+            <div class="no-text-section" id="card-no-result">
+                <img class="imgMuñeco" src="images/muñeco.svg">
+                <h2>Ningún mensaje fue encontrado</h2>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div class="card-result" id="card-result">
+                <textarea id="resultado"></textarea>
+                <button class="copy-btn" onclick="copiarTexto()" id="copiar">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="social-links">
+            <a class="profile-link" href="https://github.com/Ferrriver" target="_blank"><i class="fa-brands fa-github icon"></i>GitHub</a>
+            <a class="profile-link" href="https://www.linkedin.com/in/fernandariverarico/" target="_blank"><i class="fa-brands fa-linkedin icon"></i>Linkedin</a>
+        </div>
+        <div class="copyright">
+            <i class="fa-regular fa-copyright"></i>
+            <p>Created by <span>Fernanda Rivera</span></p>
+        </div>
+    </footer>
+<script src="JS/index.js"></script>
+</body>
+</html>
