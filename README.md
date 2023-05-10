@@ -25,7 +25,7 @@ This application encrypts texts, so you can exchange secret messages with other 
 
 ### Screenshot
 
-![](./images/screenshot-solution.png)
+![](./images/ss-encrypt-app.png)
 
 ### Links
 
